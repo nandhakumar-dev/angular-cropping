@@ -1,0 +1,16 @@
+<div class="modal-body p-0">
+  <div class="overlayed-image">
+    <angular-cropper #cropper [cropperOptions]="config" [imageUrl]="post.url">
+    </angular-cropper>
+    <img [src]="post.overlay" class="card-img-top overlay-image" alt="post.overlay">
+  </div>
+  <div class="row action">
+    <div class="col icons">
+      <fa-icon *ngIf="!save" (click)="crop(post)" [icon]="faCropAlt"></fa-icon>
+      <fa-icon class="icon-green" *ngIf="save" (click)="saveCroppedImage()" [icon]="faArrowDown"></fa-icon>
+      <fa-icon (click)="close()" class="icon-red" [icon]="faTimes"></fa-icon>
+    </div>
+  </div>
+</div>
+<ngx-spinner size="medium" type="ball-clip-rotate-pulse"></ngx-spinner>
+

@@ -1,0 +1,14 @@
+<app-header></app-header>
+<div class="container ">
+    <div class="row padding justify-content-center">
+        <div class="col-lg-3 col-sm-12 col-md-4 mx-2 my-2" *ngFor="let post of allPost">
+            <div class="card">
+                <img [src]="post.overlayed_url" class="card-img-top" alt="post.overlayed_url">
+                <div class="card-body bg-dark" >
+                    <fa-icon [icon]="faExpand" (click)="viewPost(post)"></fa-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

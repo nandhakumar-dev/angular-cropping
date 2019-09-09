@@ -1,0 +1,60 @@
+fa-icon {
+    color: white;
+    background: #007bff;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.card {
+    border-radius: 5px !important;
+}
+
+.overlayed-image {
+    position: relative;
+    min-height: 365px;
+    max-height: 400px;
+    width: 347px;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 350px;
+}
+
+angular-cropper /deep/ .cropper-crop-box {
+    height: 350px !important;
+    transform: none !important;
+    width: auto !important;
+    z-index: 1001;
+    opacity: 0.4;
+}
+
+angular-cropper /deep/ .cropper .cropper-container {
+    height: auto !important;
+}
+
+.default {
+    display: none;
+}
+
+.action {
+    height: 4rem;
+}
+
+.icons {
+    height: 4rem;
+    width: 100%;
+    text-align: center;
+    transform: translateY(35%);
+}
+
+.icon-red {
+    background: red;
+}
+.icon-green {
+    background: rgb(22, 175, 22);
+}
